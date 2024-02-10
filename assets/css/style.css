@@ -33,8 +33,12 @@ textarea {
   text-decoration: none;
   outline: none; }
 
+  /* estaba solo text-aling*/
 .center {
-  text-align: center; }
+  text-align: center;
+ 
+ }
+
 
 .left {
   text-align: left; }
@@ -508,7 +512,7 @@ body {
   padding: 20px; }
   .contact-tab iframe {
     width: 100%;
-    height: 400px; }
+    height: 500px; }
 
 @media screen and (max-width: 575px) {
   .rgbf {
@@ -525,8 +529,17 @@ body {
   text-align: center;
 }
 
+/**.portfolio-detail .gallery img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}**/
+
 .portfolio-detail .gallery img {
   width: 100%;
+  height: auto; /* Ajusta automáticamente la altura según el ancho */
+  /*max-width: 100%;  Asegura que la imagen no exceda el ancho del contenedor */
+  /*max-height: 300px; */ /* Establece una altura máxima para las imágenes */
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -543,7 +556,27 @@ body {
     width: 100%;
   }
 }
-footer{
-  background-color:#d0fffc ;
- 
+
+.spacer {
+  margin-bottom: 50px; /* Ajusta el valor según el espacio deseado */
+}
+
+.github-link {
+  background-color: #24292e; /* Color de fondo del botón */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  
+  display: inline-block; /* Mostrar como bloque en línea */
+}
+
+.github-link a {
+  text-decoration: none; /* Eliminar subrayado del enlace */
+  color: #fff; /* Color del texto */
+  display: flex; /* Usar flexbox para centrar el contenido verticalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.github-link img {
+  width: 30px; /* Tamaño del logo de GitHub */
+  margin-right: 10px; /* Espacio entre el logo y el texto */
 }
