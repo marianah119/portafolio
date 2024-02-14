@@ -580,3 +580,51 @@ body {
   width: 30px; /* Tamaño del logo de GitHub */
   margin-right: 10px; /* Espacio entre el logo y el texto */
 }
+/* Agregamos estilos para la sección de habilidades técnicas */
+
+.skills {
+  background-color: #f9f9f9; /* Color de fondo */
+  padding: 50px 0; /* Espaciado interno */
+}
+
+.skills h2.sec-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333; /* Color del título */
+}
+
+.skills h3 {
+  color: #444; /* Color de los títulos de habilidades */
+}
+
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills li {
+  margin-bottom: 20px;
+}
+
+.skills strong {
+  color: #00ab9f; /* Color del nombre de la habilidad */
+}
+
+.skills p {
+  color: #666; /* Color del texto de la descripción */
+}
+
+/* Estilos para cada habilidad individual */
+.skills .col-md-6 {
+  padding: 0 15px;
+}
+
+/* Estilos para las habilidades de programación */
+.skills .col-md-6:nth-child(odd) {
+  background-color: #f5f5f5; /* Color de fondo alternativo para habilidades impares */
+}
+
+/* Estilos para las habilidades de tecnologías y herramientas */
+.skills .col-md-6:nth-child(even) {
+  background-color: #eaeaea; /* Color de fondo alternativo para habilidades pares */
+}
